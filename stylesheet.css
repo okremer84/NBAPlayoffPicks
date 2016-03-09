@@ -1,0 +1,338 @@
+@charset "utf-8";
+#SideBar {
+	position: absolute;
+	width: 22%;
+	left: 0;
+	top: 0;
+	height: auto;
+	max-height: 89vh;
+	overflow: auto;
+}
+#playoffBracket {
+	position: relative;
+	width: 70%;
+}
+.profilePic {
+	width: 10%;
+	height: 15%;
+	position: absolute;
+}
+#FBUser {
+	border-color: black;
+	border-style: solid;
+	width: 270px;
+	position: relative;
+	height: 60px;
+	list-style-type: none;
+	margin-top: 5px;
+	left: 0%;
+	font-size: 14px;
+  font-family: "Bookman Old Style";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+#profilePic {
+	height: 100%;
+	position: absolute;
+	left: 17%;
+}
+#userName {
+}
+#userPoints {
+	position:relative;
+	top:50%;
+	
+}
+a {
+	text-decoration: none;
+	border: none;
+	color: #000000;
+}
+.userName {
+	position: absolute;
+	top: 10%;
+	left: 40%;
+}
+.userPoints {
+	position: absolute;
+	top: 70%;
+	left: 40%;
+}
+.UserPosition {
+	position: absolute;
+	font-family: Ariel;
+	left: 0%;
+	font-size: 25px;
+  font-family: "Bookman Old Style";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+ul a #FBUser:hover {
+	background-color: #9F9F9F;
+}
+.smallButton   {
+	border: solid black;
+	padding: 7px;
+	width: 55px;
+	bottom: 2%;
+	font-size: 14px;
+  font-family: "Bookman Old Style";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+ul
+{
+	list-style-type: none;
+	align-content: center;
+	padding:0px;
+}
+.smallButton.global {
+	position: absolute;
+	left: 140px;
+	z-index: 2;
+}
+.smallButton.friends {
+	position: absolute;
+	left: 40px;
+	z-index: 2;
+}
+#SideBar .thinLine {
+	left: 20px;
+	width: 2px;
+	height:100vh;
+}
+.bracket {
+	left: 26%;
+	height: auto;
+	position: absolute;
+	top: 15vh;
+	width: 966px;
+}
+.whiteBG {
+	background-color: white;
+	height: 20px;
+	position: absolute;
+	top: 90vh;
+	left: 0px;
+}
+.bracket .westQuarterFinals {
+	position: absolute;
+	left: 25px;
+	top:0px;
+}
+.bracket .eastQuarterFinals {
+	position: absolute;
+	left: 875px;
+	top: -10px;
+}
+.team {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+}
+.teamImg{
+	height:100%;
+	width:100%;
+	border:none;
+}
+.one {
+	top: 0px;
+}
+.two {
+	top: 240px;
+}
+.three {
+	top: 360px;
+}
+.four {
+	top: 120px;
+}
+.five {
+	top: 170px;
+}
+.six {
+	top: 410px;
+}
+.seven {
+	top: 290px;
+}
+.eight {
+	top: 50px;
+}
+.semione {
+	top: 0px;
+}
+.semitwo {
+	top: 120px;
+}
+.semithree {
+	top: 240px;
+}
+.semifour {
+	top: 360px;
+}
+.bracket .eastSemiFinals {
+	position: absolute;
+	left: 800px;
+	top: 20px;
+}
+.bracket .westSemiFinals {
+	position: absolute;
+	left: 100px;
+	top: 25px;
+}
+.bracket .eastFinals {
+	position: absolute;
+	left: 710px;
+	top: 80px;
+}
+.bracket .westFinals {
+	position: absolute;
+	left: 190px;
+	top: 80px;
+}
+.finalsone {
+	top: 0px;
+}
+.finalstwo {
+	top: 240px;
+}
+.bracket .nbaFinals {
+	position: absolute;
+	left: 280px;
+	top: 200px;
+}
+.nbafinalsone {
+	top: 0px;
+}
+.nbafinalstwo {
+	top: 0px;
+	left: 340px;
+}
+.bracket .finalsWinner {
+	position: absolute;
+	left: 426px;
+	width: 90px;
+	height: 90px;
+	top: 197px;
+}
+.bracket .westQuarterFinalsCount {
+	position:absolute;
+	left:90px;
+	top:80px;
+}
+.bracket .eastQuarterFinalsCount {
+	position:absolute;
+	left:790px;
+	top:75px;
+}
+.quarter1 {
+	position:absolute;
+	top:0px;
+}
+.quarter2 {
+	position:absolute;
+	top:120px;
+}
+.quarter3 {
+	position:absolute;
+	top:240px;
+}
+.quarter4 {
+	position:absolute;
+	top:360px;
+}
+.semi1 {
+	position:absolute;
+	top:0px;
+}
+.semi2{
+	position:absolute;
+	top:240px;
+}
+.bracket .westSemiFinalsCount {
+	position:absolute;
+	left:170px;
+	top:130px;
+}
+.bracket .eastSemiFinalsCount {
+	position:absolute;
+	left:690px;
+	top:125px;
+}
+.bracket .nbaFinalsCount {
+	position:absolute;
+	left:430px;
+	top:280px;
+}
+.mvpDiv {
+	position: absolute;
+	left:420px;
+	top:330px;
+}
+.welcomeUser {
+	position: absolute;
+	top: 0px;
+	left: 400px;
+}
+.welcomeUser .welcomeText {
+	position: absolute;
+}
+li {
+	border: none;
+}
+.playerSelect {
+	position:absolute;
+	top:60px;
+	left:0px;
+}
+.teamSelect {
+	position:absolute;
+	top:40px;
+	left:0px;
+}
+.selectedButton {
+	background-color:#BBBBBB;
+}
+.confFinalsWinnersCount {
+	position:absolute;
+	top:250px;
+	left:270px;
+}
+.eastFinalsWinnersCount{
+	position:absolute;
+	left:340px;
+}
+.westFinalsWinnersCount{
+	position:absolute;
+}
+.fb-share-button {
+	position:absolute;
+	top:80px;
+	left:400px;
+}
+.fb-comments {
+	position:absolute;
+	top:500px;
+	left:200px;
+}
+.correctTeam {
+	background-color:lightgreen;
+	border-radius:10px;
+}
+.incorrectTeam {
+	background-color:red;
+	border-radius:10px;
+}
+.correctCount {
+	background-color:lightgreen;
+}
+.incorrectCount {
+	background-color:red;
+}

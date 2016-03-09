@@ -1,0 +1,13 @@
+{
+    "name": "okremer/nbapicks2015",
+    "description": "app for picking nba playoff winning teams",
+    "authors": [
+        {
+            "name": "Omer Kremer",
+            "email": "okremer84@gmail.com"
+        }
+    ],
+    "require": {
+      "facebook/php-sdk-v4" : "4.0.*",
+    }
+}
