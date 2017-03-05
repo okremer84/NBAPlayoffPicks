@@ -1,28 +1,13 @@
 <?php
 
-/**
-
- * Created by PhpStorm.
-
- * User: okremer
-
- * Date: 4/11/2015
-
- * Time: 02:44
-
- */
-
 require 'vendor/autoload.php';
 require_once "phpfunctions.php";
 use Facebook\HttpClients\FacebookHttpable;
-use Facebook\HttpClients\FacebookCurl;
-use Facebook\HttpClients\FacebookCurlHttpClient;
 use Facebook\Entities\AccessToken;
 use Facebook\Entities\SignedRequest;
 use Facebook\FacebookSession;
 use Facebook\FacebookRedirectLoginHelper;
 use Facebook\FacebookRequest;
-use Facebook\FacebookResponse;
 use Facebook\FacebookSDKException;
 use Facebook\FacebookRequestException;
 use Facebook\FacebookOtherException;
@@ -33,7 +18,12 @@ use Facebook\GraphSessionInfo;
 // start session
 session_start();
 // init app with app id and secret
-FacebookSession::setDefaultApplication('*********', '**********************************');
+
+$mysqli = Database::getInstance();
+$stmt = $mysqli->query("SELECT key_name, value FROM settings WHERE key_name IN ('fb_public', 'fb_secret')");
+$fb_keys = $stmt->fetch_assoc();
+
+FacebookSession::setDefaultApplication($fb_keys['fb_public'], $fb_keys['fb_secret']);
 // login helper with redirect_uri
 $helper = new FacebookRedirectLoginHelper( 'http://www.nbaplayoffpicks.com/' );
 // see if a existing session exists
@@ -82,8 +72,7 @@ if ( isset( $session ) ) {
 
 	$UserObject = $graphObject;
 	$UID = $graphObject['id'];
-	
-	$mysqli = Database::getInstance();
+
 	$user = $mysqli->query("SELECT * FROM users WHERE facebook_uid=" . $UID . "");
 	if ($user == false || $user->num_rows == 0)
 	{
