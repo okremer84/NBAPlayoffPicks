@@ -3,13 +3,13 @@
 class Database extends MySQLi {
      private static $instance = null ;
 
-     private function __construct($host, $user, $password, $database){ 
+     public function __construct($host, $user, $password, $database){
          parent::__construct($host, $user, $password, $database);
      }
 
      public static function getInstance(){
          if (self::$instance == null){
-             self::$instance = new self("localhost", "wwwndkpl_picksus", "*********", "wwwndkpl_nbaplayoffpicks");
+             self::$instance = new self(DB_HOST, DB_USERNAME, DB_PASSWORD, "wwwndkpl_nbaplayoffpicks");
          }
          return self::$instance ;
      }

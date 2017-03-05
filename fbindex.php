@@ -1,5 +1,6 @@
 <?php
 
+require_once 'config.php';
 require 'vendor/autoload.php';
 require_once "phpfunctions.php";
 use Facebook\HttpClients\FacebookHttpable;
