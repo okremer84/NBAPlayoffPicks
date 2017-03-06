@@ -19,6 +19,7 @@ use Facebook\GraphSessionInfo;
 // start session
 session_start();
 // init app with app id and secret
+$mysqli = Database::getInstance();
 
 FacebookSession::setDefaultApplication(FB_PUBLIC, FB_SECRET);
 // login helper with redirect_uri
