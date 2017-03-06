@@ -20,11 +20,7 @@ use Facebook\GraphSessionInfo;
 session_start();
 // init app with app id and secret
 
-$mysqli = Database::getInstance();
-$stmt = $mysqli->query("SELECT key_name, value FROM settings WHERE key_name IN ('fb_public', 'fb_secret')");
-$fb_keys = $stmt->fetch_assoc();
-
-FacebookSession::setDefaultApplication($fb_keys['fb_public'], $fb_keys['fb_secret']);
+FacebookSession::setDefaultApplication(FB_PUBLIC, FB_SECRET);
 // login helper with redirect_uri
 $helper = new FacebookRedirectLoginHelper( 'http://www.nbaplayoffpicks.com/' );
 // see if a existing session exists

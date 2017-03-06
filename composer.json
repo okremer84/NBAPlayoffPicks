@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-      "facebook/graph-sdk" : "~5.0",
+      "facebook/graph-sdk" : "~4.0",
       "twig/twig":"~2.0"
     }
 }
