@@ -26,14 +26,15 @@
     <a href="#" onClick="selectFriends(); return false;" class="smallButton friends selectedButton" id="friendsButton">Friends</a>
     <a href="#" onClick="selectGlobal(); return false;" class="smallButton global" id="globalButton">Global</a>
 </div>
+// TODO: Change to AJAX calls
 <form action="sendPicks.php" method="post" id="picksForm">
     <div class="bracket">
-        <div class="fb-share-button" data-href="http://www.nbaplayoffpicks.com/index.php?friendid=<?php echo $UID; ?>"
+        <div class="fb-share-button" data-href="http://www.nbaplayoffpicks.com/index.php?friendid={{ uid }}"
              data-layout="button_count"></div>
         <img src="images/background.png"/>
         <div class="welcomeUser">
-            <img src="<?php echo getUserPic($UID); ?>" style="height:75px; width:75px"><span
-                    class="welcomeText"><?php echo getUserName($UID); ?>'s Bracket</span>
+            <img src="{{ user_pic }}" style="height:75px; width:75px"><span
+                    class="welcomeText">{{ user_name }}'s Bracket</span>
         </div>
         <ul class="westQuarterFinals">
             <a href="#" onclick="selectTeam(event); return false;">
@@ -188,7 +189,7 @@
             <li><?php populateSelect("nbaFinals_count", $UID); ?>
             </li>
         </ul>
-        <div class="fb-comments" data-href="http://www.nbaplayoffpicks.com/index.php?friendid=<?php echo $UID; ?>"
+        <div class="fb-comments" data-href="http://www.nbaplayoffpicks.com/index.php?friendid={{ uid }}"
              data-numposts="5" data-colorscheme="light"></div>
         <div class="mvpDiv">
             <ul>
